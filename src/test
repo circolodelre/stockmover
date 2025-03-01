@@ -1,0 +1,8 @@
+#!/usr/bin/expect
+
+# Avvia il processo che vuoi controllare
+spawn stockfish
+send "uci\n"
+expect "uciok"
+send "startnewgame\n"
+send "quit\n"
